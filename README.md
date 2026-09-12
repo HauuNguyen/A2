@@ -1,15 +1,29 @@
-Used Car Price Prediction Web Application — Assignment 2
-An end-to-end Machine Learning web application designed to predict used car prices based on user-inputted vehicle specifications. The application is containerized using Docker and deployed on the AIT CSIM ml-brain Server integrated with Traefik Reverse Proxy.
-🔗 Live Demo & Deployment Information
-Live Web App URL: https://st127260.ml.brain.cs.ait.ac.th
-Docker Hub Image: nchau2201/car-price-a2:v2
-Student ID: st127260
-🛠 Features & System Architecture
-Interactive User Interface: Developed using Dash / Plotly (Flask backend), enabling users to enter vehicle specifications (year of manufacture, mileage driven, fuel type, engine capacity, max power, etc.) and receive real-time price predictions.
-Model Inference: Leverages a pre-trained Machine Learning model (.pkl / .joblib) to process input features and generate price predictions.
-Containerization: Packaged with all necessary dependencies inside a lightweight Docker container built for the linux/amd64 architecture.
-Reverse Proxy & Security: Automatically routed through Traefik Proxy on the server with SSL/TLS certificate resolution.
-📂 Project Structure
+# Used Car Price Prediction Web Application — Assignment 2
+
+An end-to-end Machine Learning web application designed to predict used car prices based on user-inputted vehicle specifications. The application is containerized using **Docker** and deployed on the **AIT CSIM ml-brain Server** integrated with **Traefik Reverse Proxy**.
+
+---
+
+## 🔗 Live Demo & Deployment Information
+
+* **Live Web App URL:** [https://st127260.ml.brain.cs.ait.ac.th](https://st127260.ml.brain.cs.ait.ac.th)
+* **Docker Hub Image:** `nchau2201/car-price-a2:v2`
+* **Student ID:** `st127260`
+
+---
+
+## 🛠 Features & System Architecture
+
+* **Interactive User Interface:** Developed using **Dash / Plotly (Flask backend)**, enabling users to enter vehicle specifications (year of manufacture, mileage driven, fuel type, engine capacity, max power, etc.) and receive real-time price predictions.
+* **Model Inference:** Leverages a pre-trained Machine Learning model (`.pkl` / `.joblib`) to process input features and generate price predictions.
+* **Containerization:** Packaged with all necessary dependencies inside a lightweight Docker container built for the `linux/amd64` architecture.
+* **Reverse Proxy & Security:** Automatically routed through Traefik Proxy on the server with SSL/TLS certificate resolution.
+
+---
+
+## 📂 Project Structure
+
+```text
 .
 ├── app.py                 # Entry point running the Dash/Flask web application
 ├── models.py              # Model architecture and preprocessing pipelines
